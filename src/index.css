@@ -1,0 +1,7 @@
+@import "./assets/fonts/yekan/iran-yekan.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./assets/components/button.css";
