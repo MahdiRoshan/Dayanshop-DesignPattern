@@ -1,0 +1,69 @@
+.btn-primary {
+  @apply px-6 py-3 lg:px-[44px] lg:py-[10px];
+  @apply text-base lg:text-md font-medium;
+  @apply text-neutral-500;
+  @apply border border-neutral-500;
+  @apply hover:bg-neutral-500 hover:text-white;
+  @apply disabled:hover:bg-transparent disabled:cursor-not-allowed disabled:text-neutral-100 disabled:border-neutral-100;
+  @apply transition-all ease-in-out duration-300;
+}
+
+.btn-primary-loading {
+  @apply px-14 py-3 lg:px-19;
+  @apply text-md border border-neutral-100 cursor-progress;
+  @apply disabled:cursor-wait;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 lg:px-[44px] lg:py-[10px];
+  @apply text-base lg:text-md font-medium;
+  @apply text-white bg-neutral-500;
+  @apply hover:bg-neutral-400 hover:text-white;
+  @apply disabled:text-neutral-200 disabled:bg-neutral-50 disabled:hover:cursor-not-allowed;
+  @apply transition-all ease-in-out duration-300;
+}
+
+.btn-secondary-loading {
+  @apply px-14 py-3 lg:px-19;
+  @apply text-md bg-neutral-50 cursor-progress;
+  @apply disabled:cursor-wait;
+}
+
+.btn-tertiary {
+  @apply px-6 py-3 lg:px-[44px] lg:py-[10px];
+  @apply text-base lg:text-md font-medium;
+  @apply text-neutral-500;
+  @apply border border-neutral-100;
+  @apply hover:bg-transparent;
+  @apply disabled:hover:bg-transparent disabled:cursor-not-allowed disabled:text-neutral-100 disabled:border-neutral-100;
+  @apply transition-all ease-in-out duration-300;
+}
+
+.btn-tertiary-loading {
+  @apply px-14 py-3 lg:px-19;
+  @apply text-md border border-neutral-100 cursor-progress;
+  @apply disabled:cursor-wait;
+}
+
+.btn-link {
+  @apply px-6 py-3 lg:px-[44px] lg:py-[10px];
+  @apply text-base lg:text-md font-medium;
+  @apply text-neutral-500;
+  @apply hover:bg-transparent hover:text-neutral-400;
+  @apply disabled:cursor-not-allowed disabled:text-neutral-100;
+  @apply transition-all ease-in-out duration-300;
+}
+
+.btn-link-loading {
+  @apply px-14 py-3 lg:px-19;
+  @apply text-md  cursor-progress;
+  @apply disabled:cursor-wait;
+}
+
+.btn-sm {
+  @apply text-base px-5 py-2;
+}
+
+.btn-sm-loading {
+  @apply px-12;
+}
