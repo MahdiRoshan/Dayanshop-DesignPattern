@@ -67,3 +67,17 @@
 .btn-sm-loading {
   @apply px-12;
 }
+
+/* ---------------------------- */
+.add-basket-btn {
+  @apply px-[140px] py-[10px];
+  @apply text-md font-medium;
+  @apply bg-neutral-500 text-white;
+  @apply transition-all ease-in-out duration-300;
+}
+
+.favorite-btn {
+  @apply px-[68.5px] py-[14px];
+  @apply border border-neutral-100;
+  @apply hover:border-primary-300;
+}

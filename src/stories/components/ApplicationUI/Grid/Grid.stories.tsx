@@ -2,8 +2,6 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Container from "../Container";
 import Grid from "./Grid";
 
-
-
 const meta: Meta<typeof Grid> = {
   title: "ApplicationUI/GridSystem",
   component: Grid,
@@ -14,7 +12,7 @@ const meta: Meta<typeof Grid> = {
 export default meta;
 type Story = StoryObj<typeof Grid>;
 
-export const largeScreen: Story = {
+export const GridSystem: Story = {
   render: () => (
     <Container>
       <div className="grid grid-cols-12 gap-4">
@@ -55,14 +53,7 @@ export const largeScreen: Story = {
           12
         </div>
       </div>
-    </Container>
-  ),
-};
-
-export const smallScreen: Story = {
-  render: () => (
-    <Container>
-      <div className="grid grid-cols-6 gap-4 min-w-[320px] max-w-[599px]">
+      <div className="grid grid-cols-6 gap-4 min-w-[320px] max-w-[599px] mt-10">
         <div className="aspect-[1/6] bg-neutral-100 flex items-center justify-center">
           1
         </div>
