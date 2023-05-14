@@ -4,6 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "tippy.js/dist/tippy.css";
+@import "tippy.js/dist/tippy.css"; 
 @import "./assets/components/button.css";
 @import "./assets/components/tooltip.css";
