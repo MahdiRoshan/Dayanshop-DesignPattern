@@ -67,3 +67,25 @@
 .btn-sm-loading {
   @apply px-12;
 }
+
+/* ---------------------------- */
+.add-basket-btn {
+  @apply px-[140px] py-[10px];
+  @apply text-md font-medium;
+  @apply bg-neutral-500 text-white;
+  @apply transition-all ease-in-out duration-300;
+}
+
+.favorite-btn {
+  @apply px-[68.5px] py-[14px];
+  @apply border border-neutral-100;
+  @apply hover:border-primary-300;
+}
+
+.feature-btn {
+  @apply px-[36.5px] py-3;
+  @apply font-medium;
+  @apply border border-neutral-100;
+  @apply hover:border-neutral-200;
+  @apply disabled:bg-neutral-50 disabled:text-neutral-500/20 disabled:hover:border-neutral-100 disabled:cursor-not-allowed;
+}

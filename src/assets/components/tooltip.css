@@ -1,0 +1,22 @@
+.tippy-box {
+  @apply text-sm font-medium text-white bg-neutral-400 rounded-none;
+}
+
+.tippy-box[data-placement="bottom"] .tippy-arrow {
+  @apply before:border-b-neutral-400;
+}
+.tippy-box[data-placement="top"] .tippy-arrow {
+  @apply before:border-t-neutral-400;
+}
+.tippy-box[data-placement="right"] .tippy-arrow {
+  @apply before:border-r-neutral-400;
+}
+.tippy-box[data-placement="left"] .tippy-arrow {
+  @apply before:border-l-neutral-400;
+}
+.tippy-content {
+  @apply px-3 py-1.5 rounded-none;
+}
+.tippy-arrow {
+  @apply before:border-transparent;
+}
