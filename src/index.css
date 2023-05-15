@@ -4,6 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "tippy.js/dist/tippy.css"; 
+@import "tippy.js/dist/tippy.css";
 @import "./assets/components/button.css";
 @import "./assets/components/tooltip.css";
+@import "./assets/components/badge.css";
+@import "./assets/components/slider.css";
+
+@layer {
+  html {
+    direction: rtl;
+  }
+}
