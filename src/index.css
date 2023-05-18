@@ -9,6 +9,8 @@
 @import "./assets/components/tooltip.css";
 @import "./assets/components/badge.css";
 @import "./assets/components/slider.css";
+@import "./assets/components/tag.css";
+@import "./assets/components/reaction.css";
 
 @layer {
   html {

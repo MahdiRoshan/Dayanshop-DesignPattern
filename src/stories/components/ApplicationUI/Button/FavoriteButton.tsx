@@ -2,7 +2,7 @@ import clsx from "clsx";
 import { FC, useState } from "react";
 import FavoriteActive from "../../../../assets/icons/flat/FavoriteActive";
 import FavoriteDeactive from "../../../../assets/icons/flat/FavoriteDeactive";
-import Tooltip from "../Tooltip/Tooltip";
+import Tooltip from "../../FormElements/Tooltip";
 
 interface FavoriteButtonProps {
   className?: string;
