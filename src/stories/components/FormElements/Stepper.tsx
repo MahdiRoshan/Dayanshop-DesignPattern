@@ -21,7 +21,7 @@ const Stepper: FC<StepperProps> = (props) => {
     <div className="flex items-center gap-[6px]">
       <button
         disabled={step === 6}
-        onClick={handlePlus}
+        onClick={handlePlus} 
         className="p-2 border rounded-full disabled:bg-neutral-50 disabled:text-neutral-200 disabled:border-none"
       >
         <Plus size={16} />
