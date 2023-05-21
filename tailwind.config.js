@@ -43,6 +43,7 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       white: "white",
+      black: "black",
       success: "#16AF53",
       "success-light": "#a1dfba",
       "success-veryLight": "#F2FDF5",
