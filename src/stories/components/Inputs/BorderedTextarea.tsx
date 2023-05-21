@@ -3,26 +3,27 @@ import { ComponentPropsWithoutRef, FC, forwardRef } from "react";
 import { IconSvgProps } from "../../../assets/icons";
 import HelperText from "../FormElements/HelperText";
 
-interface BorderedInput extends ComponentPropsWithoutRef<"input"> {
+interface BorderedTextareaProps extends ComponentPropsWithoutRef<"textarea"> {
   label?: string;
   message?: string;
-  messageIcon?: FC<IconSvgProps>;
   messageType?: "success" | "error";
+  messageIcon?: FC<IconSvgProps>;
+  className?: string;
 }
 
-const BorderedInput = forwardRef<HTMLInputElement, BorderedInput>(
+const BorderedTextarea = forwardRef<HTMLTextAreaElement, BorderedTextareaProps>(
   (props, ref) => {
-    const { label, message, messageIcon, messageType, className, ...rest } =
+    const { label, message, messageType, messageIcon, className, ...rest } =
       props;
 
     return (
       <div className={clsx("relative", className)}>
-        <input type="text" ref={ref} className="input-bordered" {...rest} />
-        {label && <label className="input-bordered-label">{label}</label>}
+        <textarea className="textarea-bordered" ref={ref} {...rest} />
+        {label && <label className="textarea-bordered-label">{label}</label>}
         <HelperText
           message={message}
           icon={messageIcon}
-          className={clsx("mt-[6px]",{
+          className={clsx("mt-[6px]", {
             "text-neutral-300": !messageType,
             "text-success": messageType === "success",
             "text-error": messageType === "error",
@@ -33,4 +34,4 @@ const BorderedInput = forwardRef<HTMLInputElement, BorderedInput>(
   }
 );
 
-export default BorderedInput;
+export default BorderedTextarea;
