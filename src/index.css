@@ -12,6 +12,7 @@
 @import "./assets/components/tag.css";
 @import "./assets/components/reaction.css";
 @import "./assets/components/input.css";
+@import "./assets/components/dropdown.css";
 
 @layer {
   html {
