@@ -1,0 +1,28 @@
+.dropdown {
+  @apply bg-white border px-5 py-2 relative mt-2;
+  @apply before:block before:absolute before:bottom-full before:right-8 before:mb-px;
+  @apply before:border-x-8 before:border-b-8 before:border-transparent before:border-b-neutral-300;
+  @apply after:block after:absolute after:bottom-full after:right-8;
+  @apply after:border-x-8 after:border-b-8 after:border-transparent after:border-b-white;
+}
+
+.dropdown-item {
+  @apply border-b last:border-b-0 block py-2;
+}
+
+a.dropdown-item {
+  @apply hover:text-primary-600;
+}
+
+.dropdown-item:focus,
+.dropdown-item-active {
+  @apply text-primary-600;
+}
+
+.dropdown-left {
+  @apply bg-white border px-5 py-2 relative mt-2;
+  @apply before:block before:absolute before:bottom-full before:left-14 before:mb-px;
+  @apply before:border-x-8 before:border-b-8 before:border-transparent before:border-b-neutral-300;
+  @apply after:block after:absolute after:bottom-full after:left-14;
+  @apply after:border-x-8 after:border-b-8 after:border-transparent after:border-b-white;
+}
